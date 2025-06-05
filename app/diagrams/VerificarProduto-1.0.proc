@@ -3,7 +3,7 @@
   <process:MainProcess xmi:id="_-hFW4DxhEfCoxb6uEVqXww" name="VerificarProduto" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_-hFW4TxhEfCoxb6uEVqXww" name="VerificarProduto">
       <elements xmi:type="process:Lane" xmi:id="_-hFW4jxhEfCoxb6uEVqXww" name="Employee lane" actor="_-hFW-zxhEfCoxb6uEVqXww">
-        <elements xmi:type="process:StartEvent" xmi:id="_-hFW4zxhEfCoxb6uEVqXww" name="Start1" outgoing="_-hFW-DxhEfCoxb6uEVqXww">
+        <elements xmi:type="process:StartEvent" xmi:id="_-hFW4zxhEfCoxb6uEVqXww" name="Início da verifiação do produto com base na listagem de ECF" outgoing="_-hFW-DxhEfCoxb6uEVqXww">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_-hFW5DxhEfCoxb6uEVqXww" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_-hFW5TxhEfCoxb6uEVqXww" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_-hFW5jxhEfCoxb6uEVqXww" name="" content="" returnTypeFixed="true"/>

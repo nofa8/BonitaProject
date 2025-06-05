@@ -3,7 +3,7 @@
   <process:MainProcess xmi:id="_IhRpcDxiEfCoxb6uEVqXww" name="RececaoProduto" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_IhRpcTxiEfCoxb6uEVqXww" name="Receção Do Produto">
       <elements xmi:type="process:Lane" xmi:id="_IhRpcjxiEfCoxb6uEVqXww" name="Employee lane" actor="_IhRpizxiEfCoxb6uEVqXww">
-        <elements xmi:type="process:StartEvent" xmi:id="_IhRpczxiEfCoxb6uEVqXww" name="Start1" outgoing="_IhRpiDxiEfCoxb6uEVqXww">
+        <elements xmi:type="process:StartEvent" xmi:id="_IhRpczxiEfCoxb6uEVqXww" name="Produto recebido" outgoing="_IhRpiDxiEfCoxb6uEVqXww">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_IhRpdDxiEfCoxb6uEVqXww" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_IhRpdTxiEfCoxb6uEVqXww" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_IhRpdjxiEfCoxb6uEVqXww" name="" content="" returnTypeFixed="true"/>
