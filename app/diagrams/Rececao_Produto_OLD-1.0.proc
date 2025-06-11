@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
-  <process:MainProcess xmi:id="_hLFpsEXXEfCMIvdXAFdhzA" name="Rececao_Produto" bonitaModelVersion="8">
+  <process:MainProcess xmi:id="_hLFpsEXXEfCMIvdXAFdhzA" name="Rececao_Produto_OLD" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_hLVhUEXXEfCMIvdXAFdhzA" name="Receção do Produto">
       <elements xmi:type="process:Lane" xmi:id="_hLZywEXXEfCMIvdXAFdhzA" name="Assistência técnica">
         <elements xmi:type="process:XORGateway" xmi:id="_hLeEMEXXEfCMIvdXAFdhzA" name="Verificação com sucesso?" outgoing="_hQPPcEXXEfCMIvdXAFdhzA _hQgVMEXXEfCMIvdXAFdhzA" incoming="_hQcDwEXXEfCMIvdXAFdhzA">
@@ -301,7 +301,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_hLhukEXXEfCMIvdXAFdhzA" type="3002" element="_hLhHgEXXEfCMIvdXAFdhzA" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_hLhukkXXEfCMIvdXAFdhzA" type="5024">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_hLhuk0XXEfCMIvdXAFdhzA" x="-23" y="13"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_hLhuk0XXEfCMIvdXAFdhzA" x="22" y="37"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hLhukUXXEfCMIvdXAFdhzA" x="70" y="347"/>
             </children>
