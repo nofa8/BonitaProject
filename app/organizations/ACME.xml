@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
   <users>
     <user userName="william.jobs">
       <firstName>William</firstName>

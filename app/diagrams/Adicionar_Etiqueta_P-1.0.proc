@@ -461,7 +461,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_RJ6hnUXWEfCMIvdXAFdhzA" type="3005" element="_RJ6hkEXWEfCMIvdXAFdhzA" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_RJ7IoEXWEfCMIvdXAFdhzA" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RJ6hnkXWEfCMIvdXAFdhzA" x="900" y="135"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RJ6hnkXWEfCMIvdXAFdhzA" x="900" y="135" width="120" height="60"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_RJNW8UXWEfCMIvdXAFdhzA"/>
