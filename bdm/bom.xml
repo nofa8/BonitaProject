@@ -29,7 +29,7 @@
         </businessObject>
         <businessObject qualifiedName="com.company.model.Etiqueta">
             <fields>
-                <field type="STRING" length="255" name="artigo" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="produtoId" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="descricao" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="letra" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="cor" nullable="false" collection="false"/>
@@ -64,7 +64,7 @@
         <businessObject qualifiedName="com.company.model.FormsAST04">
             <fields>
                 <field type="INTEGER" length="255" name="id" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="clientId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="clientId" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="descricaoDoProblema" nullable="true" collection="false"/>
                 <field type="INTEGER" length="255" name="produtoId" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="estaComNecessidadeDeReparacaoFisica" nullable="true" collection="false"/>
