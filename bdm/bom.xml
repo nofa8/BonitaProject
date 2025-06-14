@@ -50,7 +50,6 @@
                 <field type="STRING" length="255" name="clientId" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="assinado" nullable="true" collection="false"/>
                 <field type="INTEGER" length="255" name="produtoId" nullable="false" collection="false"/>
-                <field type="BOOLEAN" length="255" name="preenchidoAfirmadamente" nullable="true" collection="false"/>
                 <field type="LOCALDATETIME" length="255" name="dataPedido" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="estado" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="formaRececaoProduto" nullable="true" collection="false"/>

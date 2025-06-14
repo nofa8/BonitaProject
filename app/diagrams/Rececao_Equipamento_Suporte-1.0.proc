@@ -495,6 +495,17 @@
               <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Sh6q4Ek6EfC4Sp5P7pNxJA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Sh6q4Uk6EfC4Sp5P7pNxJA" name="pedidoDeSuporte" content="pedidoDeSuporte" type="TYPE_VARIABLE" returnType="com.company.model.FORSUPedidodeservico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_TbiagEk6EfC4Sp5P7pNxJA" name="pedidoDeSuporte" dataType="_QxhT6EXPEfCMIvdXAFdhzA" className="com.company.model.FORSUPedidodeservico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Sh6q4kk6EfC4Sp5P7pNxJA" name="newScript()" content="import java.time.LocalDateTime&#xD;&#xA;import java.time.ZoneId&#xD;&#xA;&#xD;&#xA;if (pedidoDeSuporte.rececaoConcluida) {&#xD;&#xA;    return LocalDateTime.now(ZoneId.systemDefault())&#xD;&#xA;} else {&#xD;&#xA;    return null&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDateTime">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_HmXG0Ek7EfC4Sp5P7pNxJA" name="pedidoDeSuporte" dataType="_QxhT6EXPEfCMIvdXAFdhzA" className="com.company.model.FORSUPedidodeservico"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Sh6q40k6EfC4Sp5P7pNxJA" type="JAVA_METHOD" expression="setDataRececaoProduto">
+              <inputTypes>java.time.LocalDateTime</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_RCz4MEXPEfCMIvdXAFdhzA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_RCz4MUXPEfCMIvdXAFdhzA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_RCz4MkXPEfCMIvdXAFdhzA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -1485,8 +1496,8 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_hhVqoUkFEfCjRvwEmZXH3g" name="produto" content="produto" type="TYPE_VARIABLE" returnType="com.company.model.Produto">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hhVqokkFEfCjRvwEmZXH3g" name="produto" dataType="_QxhT6EXPEfCMIvdXAFdhzA" className="com.company.model.Produto"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_hhVqo0kFEfCjRvwEmZXH3g" name="produtoInput.id" content="produtoInput?.id" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_hhVqpEkFEfCjRvwEmZXH3g" name="produtoInput" type="COMPLEX"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_hhVqo0kFEfCjRvwEmZXH3g" name="pedidoDeSuporte.clienteId" content="pedidoDeSuporte.clientId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_pqEAQEk8EfC4Sp5P7pNxJA" name="pedidoDeSuporte" dataType="_QxhT6EXPEfCMIvdXAFdhzA" className="com.company.model.FORSUPedidodeservico"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_hhVqpUkFEfCjRvwEmZXH3g" type="JAVA_METHOD" expression="setId">
               <inputTypes>java.lang.Integer</inputTypes>
@@ -1687,7 +1698,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_GIQM4Uj1EfC27LvilyGy9Q" name="0" content="0" returnType="java.lang.Integer"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_Q-9TAEXPEfCMIvdXAFdhzA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_qz1mMEkEEfCjRvwEmZXH3g" name="RececaoParaSuporteForm" content="aede03bc-ecfd-472e-9014-d9b8c0b97630" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_F7C_EEk8EfC4Sp5P7pNxJA" name="RececaoParaSuporteForm" content="aede03bc-ecfd-472e-9014-d9b8c0b97630" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_Q-9TAkXPEfCMIvdXAFdhzA">
         <targetForm xmi:type="expression:Expression" xmi:id="_Q-9TA0XPEfCMIvdXAFdhzA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -2766,7 +2777,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_6xtLYUj0EfC27LvilyGy9Q" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_6xskUUj0EfC27LvilyGy9Q" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6xskUkj0EfC27LvilyGy9Q" points="[-60, 26, 1434, 194]$[-60, 196, 1434, 364]$[-71, 196, 1423, 364]$[-71, 230, 1423, 398]$[-1502, 230, -8, 398]$[-1502, -150, -8, 18]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6xskUkj0EfC27LvilyGy9Q" points="[-35, 26, 1330, 389]$[-35, 73, 1330, 436]$[-1412, 73, -47, 436]$[-1412, -345, -47, 18]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6xtycEj0EfC27LvilyGy9Q" id="(1.0,0.5666666666666667)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6xtycUj0EfC27LvilyGy9Q" id="(0.5493827160493827,0.7777777777777778)"/>
     </edges>
