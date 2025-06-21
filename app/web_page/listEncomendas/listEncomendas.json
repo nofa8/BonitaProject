@@ -1,0 +1,1213 @@
+{
+  "id" : "listEncomendas",
+  "name" : "listEncomendas",
+  "type" : "page",
+  "uuid" : "b46f58b4-15b7-4144-9334-114cf4b0760b",
+  "modelVersion" : "2.6",
+  "lastUpdate" : 1750495191325,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "md" : 12,
+          "sm" : 12,
+          "xs" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "repeatedCollection" : {
+            "type" : "variable"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          }
+        },
+        "reference" : "8ed86a51-d141-404d-b146-f904af330c48",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "description" : "Auto generate ui for business object \"com.company.model.Encomenda\"",
+        "rows" : [
+          [
+            {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12
+              },
+              "propertyValues" : { },
+              "reference" : "35d4695e-1c7f-4f06-8019-c7c19c45b315",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "description" : "\"com.company.model.Encomenda\" object from \"encomenda\" variable",
+              "rows" : [
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "md" : 12,
+                      "sm" : 12,
+                      "xs" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "level" : {
+                        "type" : "constant",
+                        "value" : "Level 4"
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "Encomenda"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "left"
+                      },
+                      "dimension" : {
+                        "type" : "constant",
+                        "value" : 12
+                      }
+                    },
+                    "reference" : "8d3050cc-22c6-4226-9254-15d4d20124af",
+                    "hasValidationError" : false,
+                    "id" : "pbTitle",
+                    "description" : ""
+                  }
+                ],
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "md" : 12,
+                      "sm" : 12,
+                      "xs" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "headers" : {
+                        "type" : "constant",
+                        "value" : [
+                          "Id",
+                          "Data Rec",
+                          "Quantidade",
+                          "Esta Conforme",
+                          "Esta Consoante Docs"
+                        ]
+                      },
+                      "allowHtml" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "caption" : {
+                        "type" : "constant"
+                      },
+                      "condensed" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "bordered" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "selectedRow" : {
+                        "type" : "variable",
+                        "value" : "encomenda_selected"
+                      },
+                      "columnsKey" : {
+                        "type" : "constant",
+                        "value" : [
+                          "id",
+                          "dataRec",
+                          "quantidade",
+                          "estaConforme",
+                          "estaConsoanteDocs"
+                        ]
+                      },
+                      "dimension" : {
+                        "type" : "constant",
+                        "value" : 12
+                      },
+                      "content" : {
+                        "type" : "expression",
+                        "value" : "encomenda"
+                      },
+                      "zebraStriping" : {
+                        "type" : "constant",
+                        "value" : true
+                      }
+                    },
+                    "reference" : "44523208-eeef-4e7c-a280-46ce70b882bf",
+                    "hasValidationError" : false,
+                    "id" : "pbTable",
+                    "description" : ""
+                  }
+                ],
+                [
+                  {
+                    "type" : "container",
+                    "dimension" : {
+                      "md" : 1,
+                      "sm" : 1,
+                      "xs" : 1,
+                      "lg" : 1
+                    },
+                    "propertyValues" : {
+                      "repeatedCollection" : {
+                        "type" : "variable"
+                      },
+                      "hidden" : {
+                        "type" : "expression",
+                        "value" : "!encomenda_selected"
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "dimension" : {
+                        "type" : "constant",
+                        "value" : 1
+                      }
+                    },
+                    "reference" : "c1c55897-3043-4106-96d3-2772f64a734c",
+                    "hasValidationError" : false,
+                    "id" : "pbContainer",
+                    "rows" : [
+                      [ ]
+                    ]
+                  },
+                  {
+                    "type" : "container",
+                    "dimension" : {
+                      "md" : 11,
+                      "sm" : 11,
+                      "xs" : 11,
+                      "lg" : 11
+                    },
+                    "propertyValues" : {
+                      "repeatedCollection" : {
+                        "type" : "variable"
+                      },
+                      "hidden" : {
+                        "type" : "expression",
+                        "value" : "!encomenda_selected"
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "dimension" : {
+                        "type" : "constant",
+                        "value" : 11
+                      }
+                    },
+                    "reference" : "93ffbc86-918a-4145-ab82-60f427a73451",
+                    "hasValidationError" : false,
+                    "id" : "pbContainer",
+                    "description" : "Display \"Encomenda\" details when a line is selected in the table above",
+                    "rows" : [
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "md" : 12,
+                            "sm" : 12,
+                            "xs" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "labelHidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "hidden" : {
+                              "type" : "expression",
+                              "value" : "!encomenda_selected.id"
+                            },
+                            "labelPosition" : {
+                              "type" : "constant",
+                              "value" : "top"
+                            },
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "labelWidth" : {
+                              "type" : "constant",
+                              "value" : 1
+                            },
+                            "readOnly" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "label" : {
+                              "type" : "interpolation",
+                              "value" : "Id"
+                            },
+                            "placeholder" : {
+                              "type" : "constant"
+                            },
+                            "type" : {
+                              "type" : "constant",
+                              "value" : "number"
+                            },
+                            "dimension" : {
+                              "type" : "constant",
+                              "value" : 12
+                            },
+                            "value" : {
+                              "type" : "variable",
+                              "value" : "encomenda_selected.id"
+                            },
+                            "required" : {
+                              "type" : "constant",
+                              "value" : true
+                            }
+                          },
+                          "reference" : "1eae30ab-bc01-4cd5-b734-241e79ec9282",
+                          "hasValidationError" : false,
+                          "id" : "pbInput",
+                          "description" : ""
+                        }
+                      ],
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "md" : 12,
+                            "sm" : 12,
+                            "xs" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "showNow" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "hidden" : {
+                              "type" : "expression",
+                              "value" : "!encomenda_selected.dataRec"
+                            },
+                            "inlineInput" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "dateFormat" : {
+                              "type" : "constant",
+                              "value" : "MM/dd/yyyy"
+                            },
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "labelWidth" : {
+                              "type" : "constant",
+                              "value" : 1
+                            },
+                            "readOnly" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "label" : {
+                              "type" : "interpolation",
+                              "value" : "Data Rec"
+                            },
+                            "type" : {
+                              "type" : "constant"
+                            },
+                            "required" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "todayLabel" : {
+                              "type" : "constant",
+                              "value" : "Today"
+                            },
+                            "timePlaceholder" : {
+                              "type" : "constant",
+                              "value" : "Enter a time (h:mm:ss a)"
+                            },
+                            "labelHidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "showToday" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "labelPosition" : {
+                              "type" : "constant",
+                              "value" : "top"
+                            },
+                            "timeFormat" : {
+                              "type" : "constant",
+                              "value" : "h:mm:ss a"
+                            },
+                            "placeholder" : {
+                              "type" : "constant",
+                              "value" : "Enter a date (mm/dd/yyyy)"
+                            },
+                            "nowLabel" : {
+                              "type" : "constant",
+                              "value" : "Now"
+                            },
+                            "dimension" : {
+                              "type" : "constant",
+                              "value" : 12
+                            },
+                            "value" : {
+                              "type" : "variable",
+                              "value" : "encomenda_selected.dataRec"
+                            },
+                            "withTimeZone" : {
+                              "type" : "constant",
+                              "value" : false
+                            }
+                          },
+                          "reference" : "193980ae-17f2-4e8f-9626-5a743eed5486",
+                          "hasValidationError" : false,
+                          "id" : "pbDateTimePicker",
+                          "description" : ""
+                        }
+                      ],
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "md" : 12,
+                            "sm" : 12,
+                            "xs" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "labelHidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "hidden" : {
+                              "type" : "expression",
+                              "value" : "!encomenda_selected.quantidade"
+                            },
+                            "labelPosition" : {
+                              "type" : "constant",
+                              "value" : "top"
+                            },
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "labelWidth" : {
+                              "type" : "constant",
+                              "value" : 1
+                            },
+                            "readOnly" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "label" : {
+                              "type" : "interpolation",
+                              "value" : "Quantidade"
+                            },
+                            "placeholder" : {
+                              "type" : "constant"
+                            },
+                            "type" : {
+                              "type" : "constant",
+                              "value" : "number"
+                            },
+                            "dimension" : {
+                              "type" : "constant",
+                              "value" : 12
+                            },
+                            "value" : {
+                              "type" : "variable",
+                              "value" : "encomenda_selected.quantidade"
+                            },
+                            "required" : {
+                              "type" : "constant",
+                              "value" : true
+                            }
+                          },
+                          "reference" : "5d108af1-a32b-418e-bd4e-0ef4df40ec79",
+                          "hasValidationError" : false,
+                          "id" : "pbInput",
+                          "description" : ""
+                        }
+                      ],
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "md" : 12,
+                            "sm" : 12,
+                            "xs" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "labelHidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "hidden" : {
+                              "type" : "expression",
+                              "value" : "!encomenda_selected.estaConforme"
+                            },
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "disabled" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "label" : {
+                              "type" : "interpolation",
+                              "value" : "Esta Conforme"
+                            },
+                            "dimension" : {
+                              "type" : "constant",
+                              "value" : 12
+                            },
+                            "value" : {
+                              "type" : "variable",
+                              "value" : "encomenda_selected.estaConforme"
+                            }
+                          },
+                          "reference" : "87952b86-c1bd-419d-9684-719946203a5f",
+                          "hasValidationError" : false,
+                          "id" : "pbCheckbox",
+                          "description" : ""
+                        }
+                      ],
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "md" : 12,
+                            "sm" : 12,
+                            "xs" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "labelHidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "hidden" : {
+                              "type" : "expression",
+                              "value" : "!encomenda_selected.estaConsoanteDocs"
+                            },
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "disabled" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "label" : {
+                              "type" : "interpolation",
+                              "value" : "Esta Consoante Docs"
+                            },
+                            "dimension" : {
+                              "type" : "constant",
+                              "value" : 12
+                            },
+                            "value" : {
+                              "type" : "variable",
+                              "value" : "encomenda_selected.estaConsoanteDocs"
+                            }
+                          },
+                          "reference" : "52befda7-241b-4894-b703-a841cee0578e",
+                          "hasValidationError" : false,
+                          "id" : "pbCheckbox",
+                          "description" : ""
+                        }
+                      ],
+                      [
+                        {
+                          "type" : "container",
+                          "dimension" : {
+                            "xs" : 12
+                          },
+                          "propertyValues" : { },
+                          "reference" : "3441a6e0-1685-4fe5-b539-d8bb71e0d7d8",
+                          "hasValidationError" : false,
+                          "id" : "pbContainer",
+                          "description" : "\"com.company.model.Produto\" object from \"encomenda_produto_selected.produto\" variable",
+                          "rows" : [
+                            [
+                              {
+                                "type" : "component",
+                                "dimension" : {
+                                  "md" : 12,
+                                  "sm" : 12,
+                                  "xs" : 12,
+                                  "lg" : 12
+                                },
+                                "propertyValues" : {
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "level" : {
+                                    "type" : "constant",
+                                    "value" : "Level 4"
+                                  },
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "text" : {
+                                    "type" : "interpolation",
+                                    "value" : "Produto"
+                                  },
+                                  "alignment" : {
+                                    "type" : "constant",
+                                    "value" : "left"
+                                  },
+                                  "dimension" : {
+                                    "type" : "constant",
+                                    "value" : 12
+                                  }
+                                },
+                                "reference" : "bf568381-55a8-4472-ae1f-0d32158109aa",
+                                "hasValidationError" : false,
+                                "id" : "pbTitle",
+                                "description" : ""
+                              }
+                            ],
+                            [
+                              {
+                                "type" : "container",
+                                "dimension" : {
+                                  "md" : 1,
+                                  "sm" : 1,
+                                  "xs" : 1,
+                                  "lg" : 1
+                                },
+                                "propertyValues" : {
+                                  "repeatedCollection" : {
+                                    "type" : "variable"
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "dimension" : {
+                                    "type" : "constant",
+                                    "value" : 1
+                                  }
+                                },
+                                "reference" : "f35db2ea-23ce-4690-82bd-2a225afc9744",
+                                "hasValidationError" : false,
+                                "id" : "pbContainer",
+                                "rows" : [
+                                  [ ]
+                                ]
+                              },
+                              {
+                                "type" : "container",
+                                "dimension" : {
+                                  "md" : 11,
+                                  "sm" : 11,
+                                  "xs" : 11,
+                                  "lg" : 11
+                                },
+                                "propertyValues" : {
+                                  "repeatedCollection" : {
+                                    "type" : "variable"
+                                  },
+                                  "hidden" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "cssClasses" : {
+                                    "type" : "constant",
+                                    "value" : ""
+                                  },
+                                  "dimension" : {
+                                    "type" : "constant",
+                                    "value" : 11
+                                  }
+                                },
+                                "reference" : "b0a587d8-1910-4c1e-955d-d6bd27167c44",
+                                "hasValidationError" : false,
+                                "id" : "pbContainer",
+                                "description" : "Display \"Produto\" details when a line is selected in the table above",
+                                "rows" : [
+                                  [
+                                    {
+                                      "type" : "component",
+                                      "dimension" : {
+                                        "md" : 12,
+                                        "sm" : 12,
+                                        "xs" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "labelHidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        },
+                                        "hidden" : {
+                                          "type" : "expression",
+                                          "value" : "!encomenda_produto.id"
+                                        },
+                                        "labelPosition" : {
+                                          "type" : "constant",
+                                          "value" : "top"
+                                        },
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "labelWidth" : {
+                                          "type" : "constant",
+                                          "value" : 1
+                                        },
+                                        "readOnly" : {
+                                          "type" : "constant",
+                                          "value" : true
+                                        },
+                                        "label" : {
+                                          "type" : "interpolation",
+                                          "value" : "Id"
+                                        },
+                                        "placeholder" : {
+                                          "type" : "constant"
+                                        },
+                                        "type" : {
+                                          "type" : "constant",
+                                          "value" : "number"
+                                        },
+                                        "dimension" : {
+                                          "type" : "constant",
+                                          "value" : 12
+                                        },
+                                        "value" : {
+                                          "type" : "variable",
+                                          "value" : "encomenda_produto.id"
+                                        },
+                                        "required" : {
+                                          "type" : "constant",
+                                          "value" : true
+                                        }
+                                      },
+                                      "reference" : "fc8ffef2-b2fb-4b33-9bcf-e5796aaec706",
+                                      "hasValidationError" : false,
+                                      "id" : "pbInput",
+                                      "description" : ""
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "type" : "component",
+                                      "dimension" : {
+                                        "md" : 12,
+                                        "sm" : 12,
+                                        "xs" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "labelHidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        },
+                                        "hidden" : {
+                                          "type" : "expression",
+                                          "value" : "!encomenda_produto.descricao"
+                                        },
+                                        "labelPosition" : {
+                                          "type" : "constant",
+                                          "value" : "top"
+                                        },
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "labelWidth" : {
+                                          "type" : "constant",
+                                          "value" : 1
+                                        },
+                                        "readOnly" : {
+                                          "type" : "constant",
+                                          "value" : true
+                                        },
+                                        "label" : {
+                                          "type" : "interpolation",
+                                          "value" : "Descricao"
+                                        },
+                                        "placeholder" : {
+                                          "type" : "constant"
+                                        },
+                                        "type" : {
+                                          "type" : "constant",
+                                          "value" : "text"
+                                        },
+                                        "dimension" : {
+                                          "type" : "constant",
+                                          "value" : 12
+                                        },
+                                        "value" : {
+                                          "type" : "variable",
+                                          "value" : "encomenda_produto.descricao"
+                                        },
+                                        "required" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        }
+                                      },
+                                      "reference" : "824e4a05-fb94-4b88-a8f8-8ec315fad803",
+                                      "hasValidationError" : false,
+                                      "id" : "pbInput",
+                                      "description" : ""
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "type" : "component",
+                                      "dimension" : {
+                                        "md" : 12,
+                                        "sm" : 12,
+                                        "xs" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "labelHidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        },
+                                        "hidden" : {
+                                          "type" : "expression",
+                                          "value" : "!encomenda_produto.tipo"
+                                        },
+                                        "labelPosition" : {
+                                          "type" : "constant",
+                                          "value" : "top"
+                                        },
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "labelWidth" : {
+                                          "type" : "constant",
+                                          "value" : 1
+                                        },
+                                        "readOnly" : {
+                                          "type" : "constant",
+                                          "value" : true
+                                        },
+                                        "label" : {
+                                          "type" : "interpolation",
+                                          "value" : "Tipo"
+                                        },
+                                        "placeholder" : {
+                                          "type" : "constant"
+                                        },
+                                        "type" : {
+                                          "type" : "constant",
+                                          "value" : "text"
+                                        },
+                                        "dimension" : {
+                                          "type" : "constant",
+                                          "value" : 12
+                                        },
+                                        "value" : {
+                                          "type" : "variable",
+                                          "value" : "encomenda_produto.tipo"
+                                        },
+                                        "required" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        }
+                                      },
+                                      "reference" : "43343245-4d94-4dbb-8c53-94acfe7f52d1",
+                                      "hasValidationError" : false,
+                                      "id" : "pbInput",
+                                      "description" : ""
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "type" : "component",
+                                      "dimension" : {
+                                        "md" : 12,
+                                        "sm" : 12,
+                                        "xs" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "labelHidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        },
+                                        "hidden" : {
+                                          "type" : "expression",
+                                          "value" : "!encomenda_produto.finalidade"
+                                        },
+                                        "labelPosition" : {
+                                          "type" : "constant",
+                                          "value" : "top"
+                                        },
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "labelWidth" : {
+                                          "type" : "constant",
+                                          "value" : 1
+                                        },
+                                        "readOnly" : {
+                                          "type" : "constant",
+                                          "value" : true
+                                        },
+                                        "label" : {
+                                          "type" : "interpolation",
+                                          "value" : "Finalidade"
+                                        },
+                                        "placeholder" : {
+                                          "type" : "constant"
+                                        },
+                                        "type" : {
+                                          "type" : "constant",
+                                          "value" : "text"
+                                        },
+                                        "dimension" : {
+                                          "type" : "constant",
+                                          "value" : 12
+                                        },
+                                        "value" : {
+                                          "type" : "variable",
+                                          "value" : "encomenda_produto.finalidade"
+                                        },
+                                        "required" : {
+                                          "type" : "constant",
+                                          "value" : true
+                                        }
+                                      },
+                                      "reference" : "0aebfcfd-7cf7-485a-9bfb-e322411399de",
+                                      "hasValidationError" : false,
+                                      "id" : "pbInput",
+                                      "description" : ""
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "type" : "component",
+                                      "dimension" : {
+                                        "md" : 12,
+                                        "sm" : 12,
+                                        "xs" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "labelHidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        },
+                                        "hidden" : {
+                                          "type" : "expression",
+                                          "value" : "!encomenda_produto.cliente"
+                                        },
+                                        "labelPosition" : {
+                                          "type" : "constant",
+                                          "value" : "top"
+                                        },
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "labelWidth" : {
+                                          "type" : "constant",
+                                          "value" : 1
+                                        },
+                                        "readOnly" : {
+                                          "type" : "constant",
+                                          "value" : true
+                                        },
+                                        "label" : {
+                                          "type" : "interpolation",
+                                          "value" : "Cliente"
+                                        },
+                                        "placeholder" : {
+                                          "type" : "constant"
+                                        },
+                                        "type" : {
+                                          "type" : "constant",
+                                          "value" : "text"
+                                        },
+                                        "dimension" : {
+                                          "type" : "constant",
+                                          "value" : 12
+                                        },
+                                        "value" : {
+                                          "type" : "variable",
+                                          "value" : "encomenda_produto.cliente"
+                                        },
+                                        "required" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        }
+                                      },
+                                      "reference" : "98b4c785-002c-42da-a720-d95108af2f46",
+                                      "hasValidationError" : false,
+                                      "id" : "pbInput",
+                                      "description" : ""
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "type" : "component",
+                                      "dimension" : {
+                                        "md" : 12,
+                                        "sm" : 12,
+                                        "xs" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "labelHidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        },
+                                        "hidden" : {
+                                          "type" : "expression",
+                                          "value" : "!encomenda_produto.localEntrega"
+                                        },
+                                        "labelPosition" : {
+                                          "type" : "constant",
+                                          "value" : "top"
+                                        },
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "labelWidth" : {
+                                          "type" : "constant",
+                                          "value" : 1
+                                        },
+                                        "readOnly" : {
+                                          "type" : "constant",
+                                          "value" : true
+                                        },
+                                        "label" : {
+                                          "type" : "interpolation",
+                                          "value" : "Local Entrega"
+                                        },
+                                        "placeholder" : {
+                                          "type" : "constant"
+                                        },
+                                        "type" : {
+                                          "type" : "constant",
+                                          "value" : "text"
+                                        },
+                                        "dimension" : {
+                                          "type" : "constant",
+                                          "value" : 12
+                                        },
+                                        "value" : {
+                                          "type" : "variable",
+                                          "value" : "encomenda_produto.localEntrega"
+                                        },
+                                        "required" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        }
+                                      },
+                                      "reference" : "4a788e3d-f192-4ffa-a99d-dcb716a43485",
+                                      "hasValidationError" : false,
+                                      "id" : "pbInput",
+                                      "description" : ""
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "type" : "component",
+                                      "dimension" : {
+                                        "md" : 12,
+                                        "sm" : 12,
+                                        "xs" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "labelHidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        },
+                                        "hidden" : {
+                                          "type" : "expression",
+                                          "value" : "!encomenda_produto.estaProntoParaEntrega"
+                                        },
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "disabled" : {
+                                          "type" : "constant",
+                                          "value" : true
+                                        },
+                                        "label" : {
+                                          "type" : "interpolation",
+                                          "value" : "Esta Pronto Para Entrega"
+                                        },
+                                        "dimension" : {
+                                          "type" : "constant",
+                                          "value" : 12
+                                        },
+                                        "value" : {
+                                          "type" : "variable",
+                                          "value" : "encomenda_produto.estaProntoParaEntrega"
+                                        }
+                                      },
+                                      "reference" : "06d83ab0-8840-488a-8be9-71a8a1923a56",
+                                      "hasValidationError" : false,
+                                      "id" : "pbCheckbox",
+                                      "description" : ""
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "type" : "component",
+                                      "dimension" : {
+                                        "md" : 12,
+                                        "sm" : 12,
+                                        "xs" : 12,
+                                        "lg" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "labelHidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        },
+                                        "hidden" : {
+                                          "type" : "expression",
+                                          "value" : "!encomenda_produto.necessitaDePreparacao"
+                                        },
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "disabled" : {
+                                          "type" : "constant",
+                                          "value" : true
+                                        },
+                                        "label" : {
+                                          "type" : "interpolation",
+                                          "value" : "Necessita De Preparacao"
+                                        },
+                                        "dimension" : {
+                                          "type" : "constant",
+                                          "value" : 12
+                                        },
+                                        "value" : {
+                                          "type" : "variable",
+                                          "value" : "encomenda_produto.necessitaDePreparacao"
+                                        }
+                                      },
+                                      "reference" : "8b895773-5d7f-4227-a8de-2ef5e7a8226b",
+                                      "hasValidationError" : false,
+                                      "id" : "pbCheckbox",
+                                      "description" : ""
+                                    }
+                                  ]
+                                ]
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "variables" : {
+    "encomenda" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"find [com.company.model.Encomenda]\",\"businessObjectName\":\"Encomenda\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.company.model.Encomenda\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "encomenda_produto_etiqueta" : {
+      "type" : "url",
+      "value" : [
+        "{{encomenda_produto|lazyRef:'etiqueta'}}"
+      ],
+      "exposed" : false
+    },
+    "encomenda_produto_etiqueta_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : false
+    },
+    "encomenda_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : false
+    },
+    "encomenda_produto" : {
+      "type" : "url",
+      "value" : [
+        "{{encomenda_selected|lazyRef:'produto'}}"
+      ],
+      "exposed" : false
+    }
+  },
+  "assets" : [
+    {
+      "id" : "3a134cc9-4ed8-4167-938a-76047b67931c",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "60c44304-f0fa-45f0-b215-0d413e2f2a41",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}

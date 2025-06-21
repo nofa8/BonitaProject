@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.1">
+    <application homePage="encomendas" layout="custompage_layoutBonita" theme="custompage_themeBonita" token="encomendas" version="1.0" profile="User" state="ACTIVATED">
+        <displayName>Encomendas</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_listEncomendas" token="encomendas"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="encomendas">
+                <displayName>My Encomendas</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>

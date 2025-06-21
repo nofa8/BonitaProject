@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.1">
-    <application homePage="rececao" layout="custompage_layoutBonita" theme="custompage_themeBonita" token="reparacao" version="1.0" profile="User" state="ACTIVATED">
+    <application homePage="rececao" layout="custompage_layoutBonita" theme="custompage_themeBonita" token="reparacoes" version="1.0" profile="User" state="ACTIVATED">
         <displayName>Reparacao</displayName>
         <applicationPages>
             <applicationPage customPage="custompage_rececaoList" token="rececao"/>

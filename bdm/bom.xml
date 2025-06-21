@@ -5,8 +5,8 @@
             <fields>
                 <field type="INTEGER" length="255" name="id" nullable="false" collection="false"/>
                 <field type="INTEGER" length="255" name="produtoId" nullable="false" collection="false"/>
-                <field type="INTEGER" length="255" name="encomendaId" nullable="false" collection="false"/>
                 <field type="INTEGER" length="255" name="quantidadeProd" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="encomendaId" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="fornecedorName" nullable="true" collection="false"/>
                 <field type="OFFSETDATETIME" length="255" name="dateRec" nullable="true" collection="false"/>
             </fields>
@@ -29,8 +29,8 @@
         </businessObject>
         <businessObject qualifiedName="com.company.model.Etiqueta">
             <fields>
-                <field type="INTEGER" length="255" name="produtoId" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="descricao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="artigo" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="descricao" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="letra" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="cor" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="tipo" nullable="true" collection="false"/>
@@ -46,11 +46,13 @@
         </businessObject>
         <businessObject qualifiedName="com.company.model.FORSUPedidodeservico">
             <fields>
-                <field type="INTEGER" length="255" name="id" nullable="false" collection="false"/>
-                <field type="STRING" length="255" name="clientId" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="clientId" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="assinado" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="produtoId" nullable="false" collection="false"/>
-                <field type="LOCALDATETIME" length="255" name="dataPedido" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="attribute" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="preenchidoAfirmadamente" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="dataPedido" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="produtoId" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="estado" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="formaRececaoProduto" nullable="true" collection="false"/>
                 <field type="LOCALDATETIME" length="255" name="dataRececaoProduto" nullable="true" collection="false"/>
@@ -78,12 +80,13 @@
             <fields>
                 <field type="INTEGER" length="255" name="id" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="descricao" nullable="true" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.company.model.Etiqueta" fetchType="LAZY" name="etiqueta" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Etiqueta" fetchType="LAZY" name="etiqueta" nullable="true" collection="true"/>
                 <field type="STRING" length="255" name="tipo" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="finalidade" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="cliente" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="localEntrega" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="estaProntoParaEntrega" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="necessitaDePreparacao" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

@@ -1,10 +1,10 @@
 {
-  "id" : "rececaoList",
-  "name" : "rececaoList",
+  "id" : "listECFs",
+  "name" : "listECFs",
   "type" : "page",
-  "uuid" : "93468f36-0a73-4545-b254-be5aa6c03273",
+  "uuid" : "15ad966c-e250-41ba-bd80-25c30cafc39b",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1750493970573,
+  "lastUpdate" : 1750495279565,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -33,10 +33,10 @@
             "value" : 12
           }
         },
-        "reference" : "3601c083-4b26-4c4f-a782-1ca397c9c35c",
+        "reference" : "4af60525-c2f1-49af-8267-56d75a354add",
         "hasValidationError" : false,
         "id" : "pbContainer",
-        "description" : "Auto generate ui for business object \"com.company.model.FORSUPedidodeservico\"",
+        "description" : "Auto generate ui for business object \"com.company.model.ECF\"",
         "rows" : [
           [
             {
@@ -44,23 +44,11 @@
               "dimension" : {
                 "xs" : 12
               },
-              "propertyValues" : {
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "repeatedCollection" : {
-                  "type" : "variable"
-                }
-              },
-              "reference" : "9632b918-41c5-4541-ac78-912c573ca0ef",
+              "propertyValues" : { },
+              "reference" : "1a3d69b7-1708-4a95-bb9e-38514c4a5500",
               "hasValidationError" : false,
               "id" : "pbContainer",
-              "description" : "\"com.company.model.FORSUPedidodeservico\" object from \"fORSUPedidodeservico\" variable",
+              "description" : "\"com.company.model.ECF\" object from \"eCF\" variable",
               "rows" : [
                 [
                   {
@@ -86,7 +74,7 @@
                       },
                       "text" : {
                         "type" : "interpolation",
-                        "value" : "FORSUPedidodeservico"
+                        "value" : "ECF"
                       },
                       "alignment" : {
                         "type" : "constant",
@@ -97,13 +85,12 @@
                         "value" : 12
                       }
                     },
-                    "reference" : "5b862371-d2ba-4127-8ebc-fbca13b81d45",
+                    "reference" : "8a567aa4-a362-4739-b42d-02fbc3f14415",
                     "hasValidationError" : false,
                     "id" : "pbTitle",
                     "description" : ""
                   }
                 ],
-                [ ],
                 [
                   {
                     "type" : "component",
@@ -118,14 +105,11 @@
                         "type" : "constant",
                         "value" : [
                           "Id",
-                          "Client Id",
-                          "Assinado",
                           "Produto Id",
-                          "Data Pedido",
-                          "Estado",
-                          "Forma Rececao Produto",
-                          "Data Rececao Produto",
-                          "Rececao Concluida"
+                          "Quantidade Prod",
+                          "Encomenda Id",
+                          "Fornecedor Name",
+                          "Date Rec"
                         ]
                       },
                       "allowHtml" : {
@@ -153,20 +137,17 @@
                       },
                       "selectedRow" : {
                         "type" : "variable",
-                        "value" : "fORSUPedidodeservico_selected"
+                        "value" : "eCF_selected"
                       },
                       "columnsKey" : {
                         "type" : "constant",
                         "value" : [
                           "id",
-                          "clientId",
-                          "assinado",
                           "produtoId",
-                          "dataPedido",
-                          "estado",
-                          "formaRececaoProduto",
-                          "dataRececaoProduto",
-                          "rececaoConcluida"
+                          "quantidadeProd",
+                          "encomendaId",
+                          "fornecedorName",
+                          "dateRec"
                         ]
                       },
                       "dimension" : {
@@ -175,14 +156,14 @@
                       },
                       "content" : {
                         "type" : "expression",
-                        "value" : "fORSUPedidodeservico"
+                        "value" : "eCF"
                       },
                       "zebraStriping" : {
                         "type" : "constant",
                         "value" : true
                       }
                     },
-                    "reference" : "ace8bcad-a363-4a02-8231-abfb0f487e51",
+                    "reference" : "8c29380f-783d-4667-8321-fd0d1f8cd83f",
                     "hasValidationError" : false,
                     "id" : "pbTable",
                     "description" : ""
@@ -203,7 +184,7 @@
                       },
                       "hidden" : {
                         "type" : "expression",
-                        "value" : "!fORSUPedidodeservico_selected"
+                        "value" : "!eCF_selected"
                       },
                       "cssClasses" : {
                         "type" : "constant",
@@ -214,7 +195,7 @@
                         "value" : 1
                       }
                     },
-                    "reference" : "28622dad-8411-4e64-bfbc-300cf4eafc79",
+                    "reference" : "0fc58704-3593-4d63-9b38-100fe9295a9c",
                     "hasValidationError" : false,
                     "id" : "pbContainer",
                     "rows" : [
@@ -235,7 +216,7 @@
                       },
                       "hidden" : {
                         "type" : "expression",
-                        "value" : "!fORSUPedidodeservico_selected"
+                        "value" : "!eCF_selected"
                       },
                       "cssClasses" : {
                         "type" : "constant",
@@ -246,10 +227,10 @@
                         "value" : 11
                       }
                     },
-                    "reference" : "dcbb90c9-4d53-4544-a532-40c0a58dfbf4",
+                    "reference" : "e5fd7ac5-4aa6-40cc-8713-b0fd16f28eee",
                     "hasValidationError" : false,
                     "id" : "pbContainer",
-                    "description" : "Display \"FORSUPedidodeservico\" details when a line is selected in the table above",
+                    "description" : "Display \"ECF\" details when a line is selected in the table above",
                     "rows" : [
                       [
                         {
@@ -267,7 +248,7 @@
                             },
                             "hidden" : {
                               "type" : "expression",
-                              "value" : "!fORSUPedidodeservico_selected.id"
+                              "value" : "!eCF_selected.id"
                             },
                             "labelPosition" : {
                               "type" : "constant",
@@ -302,14 +283,14 @@
                             },
                             "value" : {
                               "type" : "variable",
-                              "value" : "fORSUPedidodeservico_selected.id"
+                              "value" : "eCF_selected.id"
                             },
                             "required" : {
                               "type" : "constant",
                               "value" : true
                             }
                           },
-                          "reference" : "a70619db-893a-478f-b7de-7843bdb7b988",
+                          "reference" : "588ea2c4-4f2a-466f-9581-a456bdf13b84",
                           "hasValidationError" : false,
                           "id" : "pbInput",
                           "description" : ""
@@ -331,116 +312,7 @@
                             },
                             "hidden" : {
                               "type" : "expression",
-                              "value" : "!fORSUPedidodeservico_selected.clientId"
-                            },
-                            "labelPosition" : {
-                              "type" : "constant",
-                              "value" : "top"
-                            },
-                            "cssClasses" : {
-                              "type" : "constant",
-                              "value" : ""
-                            },
-                            "labelWidth" : {
-                              "type" : "constant",
-                              "value" : 1
-                            },
-                            "readOnly" : {
-                              "type" : "constant",
-                              "value" : true
-                            },
-                            "label" : {
-                              "type" : "interpolation",
-                              "value" : "Client Id"
-                            },
-                            "placeholder" : {
-                              "type" : "constant"
-                            },
-                            "type" : {
-                              "type" : "constant",
-                              "value" : "text"
-                            },
-                            "dimension" : {
-                              "type" : "constant",
-                              "value" : 12
-                            },
-                            "value" : {
-                              "type" : "variable",
-                              "value" : "fORSUPedidodeservico_selected.clientId"
-                            },
-                            "required" : {
-                              "type" : "constant",
-                              "value" : true
-                            }
-                          },
-                          "reference" : "c4c644e0-2bdd-43e7-b831-f9fce2c02ebe",
-                          "hasValidationError" : false,
-                          "id" : "pbInput",
-                          "description" : ""
-                        }
-                      ],
-                      [
-                        {
-                          "type" : "component",
-                          "dimension" : {
-                            "md" : 12,
-                            "sm" : 12,
-                            "xs" : 12,
-                            "lg" : 12
-                          },
-                          "propertyValues" : {
-                            "labelHidden" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "hidden" : {
-                              "type" : "expression",
-                              "value" : "!fORSUPedidodeservico_selected.assinado"
-                            },
-                            "cssClasses" : {
-                              "type" : "constant",
-                              "value" : ""
-                            },
-                            "disabled" : {
-                              "type" : "constant",
-                              "value" : true
-                            },
-                            "label" : {
-                              "type" : "interpolation",
-                              "value" : "Assinado"
-                            },
-                            "dimension" : {
-                              "type" : "constant",
-                              "value" : 12
-                            },
-                            "value" : {
-                              "type" : "variable",
-                              "value" : "fORSUPedidodeservico_selected.assinado"
-                            }
-                          },
-                          "reference" : "0c328b5b-b983-4ce6-8fef-90cdc2bf51e7",
-                          "hasValidationError" : false,
-                          "id" : "pbCheckbox",
-                          "description" : ""
-                        }
-                      ],
-                      [
-                        {
-                          "type" : "component",
-                          "dimension" : {
-                            "md" : 12,
-                            "sm" : 12,
-                            "xs" : 12,
-                            "lg" : 12
-                          },
-                          "propertyValues" : {
-                            "labelHidden" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "hidden" : {
-                              "type" : "expression",
-                              "value" : "!fORSUPedidodeservico_selected.produtoId"
+                              "value" : "!eCF_selected.produtoId"
                             },
                             "labelPosition" : {
                               "type" : "constant",
@@ -475,14 +347,206 @@
                             },
                             "value" : {
                               "type" : "variable",
-                              "value" : "fORSUPedidodeservico_selected.produtoId"
+                              "value" : "eCF_selected.produtoId"
                             },
                             "required" : {
                               "type" : "constant",
                               "value" : true
                             }
                           },
-                          "reference" : "a494d5ef-949a-4fc2-8ed4-7c0b124a6981",
+                          "reference" : "90dae3a2-5561-4ed0-83d6-ba296854fcad",
+                          "hasValidationError" : false,
+                          "id" : "pbInput",
+                          "description" : ""
+                        }
+                      ],
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "md" : 12,
+                            "sm" : 12,
+                            "xs" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "labelHidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "hidden" : {
+                              "type" : "expression",
+                              "value" : "!eCF_selected.quantidadeProd"
+                            },
+                            "labelPosition" : {
+                              "type" : "constant",
+                              "value" : "top"
+                            },
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "labelWidth" : {
+                              "type" : "constant",
+                              "value" : 1
+                            },
+                            "readOnly" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "label" : {
+                              "type" : "interpolation",
+                              "value" : "Quantidade Prod"
+                            },
+                            "placeholder" : {
+                              "type" : "constant"
+                            },
+                            "type" : {
+                              "type" : "constant",
+                              "value" : "number"
+                            },
+                            "dimension" : {
+                              "type" : "constant",
+                              "value" : 12
+                            },
+                            "value" : {
+                              "type" : "variable",
+                              "value" : "eCF_selected.quantidadeProd"
+                            },
+                            "required" : {
+                              "type" : "constant",
+                              "value" : true
+                            }
+                          },
+                          "reference" : "6871840b-9581-4338-8b57-8ea449bdbbb3",
+                          "hasValidationError" : false,
+                          "id" : "pbInput",
+                          "description" : ""
+                        }
+                      ],
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "md" : 12,
+                            "sm" : 12,
+                            "xs" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "labelHidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "hidden" : {
+                              "type" : "expression",
+                              "value" : "!eCF_selected.encomendaId"
+                            },
+                            "labelPosition" : {
+                              "type" : "constant",
+                              "value" : "top"
+                            },
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "labelWidth" : {
+                              "type" : "constant",
+                              "value" : 1
+                            },
+                            "readOnly" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "label" : {
+                              "type" : "interpolation",
+                              "value" : "Encomenda Id"
+                            },
+                            "placeholder" : {
+                              "type" : "constant"
+                            },
+                            "type" : {
+                              "type" : "constant",
+                              "value" : "number"
+                            },
+                            "dimension" : {
+                              "type" : "constant",
+                              "value" : 12
+                            },
+                            "value" : {
+                              "type" : "variable",
+                              "value" : "eCF_selected.encomendaId"
+                            },
+                            "required" : {
+                              "type" : "constant",
+                              "value" : true
+                            }
+                          },
+                          "reference" : "9d2c822c-16ee-4759-8353-ad78af48eb2e",
+                          "hasValidationError" : false,
+                          "id" : "pbInput",
+                          "description" : ""
+                        }
+                      ],
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "md" : 12,
+                            "sm" : 12,
+                            "xs" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "labelHidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "hidden" : {
+                              "type" : "expression",
+                              "value" : "!eCF_selected.fornecedorName"
+                            },
+                            "labelPosition" : {
+                              "type" : "constant",
+                              "value" : "top"
+                            },
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "labelWidth" : {
+                              "type" : "constant",
+                              "value" : 1
+                            },
+                            "readOnly" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "label" : {
+                              "type" : "interpolation",
+                              "value" : "Fornecedor Name"
+                            },
+                            "placeholder" : {
+                              "type" : "constant"
+                            },
+                            "type" : {
+                              "type" : "constant",
+                              "value" : "text"
+                            },
+                            "dimension" : {
+                              "type" : "constant",
+                              "value" : 12
+                            },
+                            "value" : {
+                              "type" : "variable",
+                              "value" : "eCF_selected.fornecedorName"
+                            },
+                            "required" : {
+                              "type" : "constant",
+                              "value" : false
+                            }
+                          },
+                          "reference" : "743e9adb-4dde-4f4a-8cbb-a781278b0648",
                           "hasValidationError" : false,
                           "id" : "pbInput",
                           "description" : ""
@@ -504,7 +568,7 @@
                             },
                             "hidden" : {
                               "type" : "expression",
-                              "value" : "!fORSUPedidodeservico_selected.dataPedido"
+                              "value" : "!eCF_selected.dateRec"
                             },
                             "inlineInput" : {
                               "type" : "constant",
@@ -528,14 +592,14 @@
                             },
                             "label" : {
                               "type" : "interpolation",
-                              "value" : "Data Pedido"
+                              "value" : "Date Rec"
                             },
                             "type" : {
                               "type" : "constant"
                             },
                             "required" : {
                               "type" : "constant",
-                              "value" : true
+                              "value" : false
                             },
                             "todayLabel" : {
                               "type" : "constant",
@@ -575,289 +639,16 @@
                             },
                             "value" : {
                               "type" : "variable",
-                              "value" : "fORSUPedidodeservico_selected.dataPedido"
+                              "value" : "eCF_selected.dateRec"
                             },
                             "withTimeZone" : {
                               "type" : "constant",
                               "value" : false
                             }
                           },
-                          "reference" : "f6ded5bf-1ef7-429a-b39c-03df0130a99a",
+                          "reference" : "d1c328bb-86f8-47cc-9a8b-c43c031c02f9",
                           "hasValidationError" : false,
                           "id" : "pbDateTimePicker",
-                          "description" : ""
-                        }
-                      ],
-                      [
-                        {
-                          "type" : "component",
-                          "dimension" : {
-                            "md" : 12,
-                            "sm" : 12,
-                            "xs" : 12,
-                            "lg" : 12
-                          },
-                          "propertyValues" : {
-                            "labelHidden" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "hidden" : {
-                              "type" : "expression",
-                              "value" : "!fORSUPedidodeservico_selected.estado"
-                            },
-                            "labelPosition" : {
-                              "type" : "constant",
-                              "value" : "top"
-                            },
-                            "cssClasses" : {
-                              "type" : "constant",
-                              "value" : ""
-                            },
-                            "labelWidth" : {
-                              "type" : "constant",
-                              "value" : 1
-                            },
-                            "readOnly" : {
-                              "type" : "constant",
-                              "value" : true
-                            },
-                            "label" : {
-                              "type" : "interpolation",
-                              "value" : "Estado"
-                            },
-                            "placeholder" : {
-                              "type" : "constant"
-                            },
-                            "type" : {
-                              "type" : "constant",
-                              "value" : "text"
-                            },
-                            "dimension" : {
-                              "type" : "constant",
-                              "value" : 12
-                            },
-                            "value" : {
-                              "type" : "variable",
-                              "value" : "fORSUPedidodeservico_selected.estado"
-                            },
-                            "required" : {
-                              "type" : "constant",
-                              "value" : false
-                            }
-                          },
-                          "reference" : "57358e48-725e-42fa-855c-dcb7b13fd83b",
-                          "hasValidationError" : false,
-                          "id" : "pbInput",
-                          "description" : ""
-                        }
-                      ],
-                      [
-                        {
-                          "type" : "component",
-                          "dimension" : {
-                            "md" : 12,
-                            "sm" : 12,
-                            "xs" : 12,
-                            "lg" : 12
-                          },
-                          "propertyValues" : {
-                            "labelHidden" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "hidden" : {
-                              "type" : "expression",
-                              "value" : "!fORSUPedidodeservico_selected.formaRececaoProduto"
-                            },
-                            "labelPosition" : {
-                              "type" : "constant",
-                              "value" : "top"
-                            },
-                            "cssClasses" : {
-                              "type" : "constant",
-                              "value" : ""
-                            },
-                            "labelWidth" : {
-                              "type" : "constant",
-                              "value" : 1
-                            },
-                            "readOnly" : {
-                              "type" : "constant",
-                              "value" : true
-                            },
-                            "label" : {
-                              "type" : "interpolation",
-                              "value" : "Forma Rececao Produto"
-                            },
-                            "placeholder" : {
-                              "type" : "constant"
-                            },
-                            "type" : {
-                              "type" : "constant",
-                              "value" : "text"
-                            },
-                            "dimension" : {
-                              "type" : "constant",
-                              "value" : 12
-                            },
-                            "value" : {
-                              "type" : "variable",
-                              "value" : "fORSUPedidodeservico_selected.formaRececaoProduto"
-                            },
-                            "required" : {
-                              "type" : "constant",
-                              "value" : false
-                            }
-                          },
-                          "reference" : "f2b5fa9a-4c5d-4c94-b6ef-bbb1c2cbd37f",
-                          "hasValidationError" : false,
-                          "id" : "pbInput",
-                          "description" : ""
-                        }
-                      ],
-                      [
-                        {
-                          "type" : "component",
-                          "dimension" : {
-                            "md" : 12,
-                            "sm" : 12,
-                            "xs" : 12,
-                            "lg" : 12
-                          },
-                          "propertyValues" : {
-                            "showNow" : {
-                              "type" : "constant",
-                              "value" : true
-                            },
-                            "hidden" : {
-                              "type" : "expression",
-                              "value" : "!fORSUPedidodeservico_selected.dataRececaoProduto"
-                            },
-                            "inlineInput" : {
-                              "type" : "constant",
-                              "value" : true
-                            },
-                            "dateFormat" : {
-                              "type" : "constant",
-                              "value" : "MM/dd/yyyy"
-                            },
-                            "cssClasses" : {
-                              "type" : "constant",
-                              "value" : ""
-                            },
-                            "labelWidth" : {
-                              "type" : "constant",
-                              "value" : 1
-                            },
-                            "readOnly" : {
-                              "type" : "constant",
-                              "value" : true
-                            },
-                            "label" : {
-                              "type" : "interpolation",
-                              "value" : "Data Rececao Produto"
-                            },
-                            "type" : {
-                              "type" : "constant"
-                            },
-                            "required" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "todayLabel" : {
-                              "type" : "constant",
-                              "value" : "Today"
-                            },
-                            "timePlaceholder" : {
-                              "type" : "constant",
-                              "value" : "Enter a time (h:mm:ss a)"
-                            },
-                            "labelHidden" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "showToday" : {
-                              "type" : "constant",
-                              "value" : true
-                            },
-                            "labelPosition" : {
-                              "type" : "constant",
-                              "value" : "top"
-                            },
-                            "timeFormat" : {
-                              "type" : "constant",
-                              "value" : "h:mm:ss a"
-                            },
-                            "placeholder" : {
-                              "type" : "constant",
-                              "value" : "Enter a date (mm/dd/yyyy)"
-                            },
-                            "nowLabel" : {
-                              "type" : "constant",
-                              "value" : "Now"
-                            },
-                            "dimension" : {
-                              "type" : "constant",
-                              "value" : 12
-                            },
-                            "value" : {
-                              "type" : "variable",
-                              "value" : "fORSUPedidodeservico_selected.dataRececaoProduto"
-                            },
-                            "withTimeZone" : {
-                              "type" : "constant",
-                              "value" : false
-                            }
-                          },
-                          "reference" : "30ba039d-5d82-4b3c-b1a9-ecfd126ba622",
-                          "hasValidationError" : false,
-                          "id" : "pbDateTimePicker",
-                          "description" : ""
-                        }
-                      ],
-                      [
-                        {
-                          "type" : "component",
-                          "dimension" : {
-                            "md" : 12,
-                            "sm" : 12,
-                            "xs" : 12,
-                            "lg" : 12
-                          },
-                          "propertyValues" : {
-                            "labelHidden" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "hidden" : {
-                              "type" : "expression",
-                              "value" : "!fORSUPedidodeservico_selected.rececaoConcluida"
-                            },
-                            "cssClasses" : {
-                              "type" : "constant",
-                              "value" : ""
-                            },
-                            "disabled" : {
-                              "type" : "constant",
-                              "value" : true
-                            },
-                            "label" : {
-                              "type" : "interpolation",
-                              "value" : "Rececao Concluida"
-                            },
-                            "dimension" : {
-                              "type" : "constant",
-                              "value" : 12
-                            },
-                            "value" : {
-                              "type" : "variable",
-                              "value" : "fORSUPedidodeservico_selected.rececaoConcluida"
-                            }
-                          },
-                          "reference" : "67231491-a48a-44bf-96f8-72107df2596a",
-                          "hasValidationError" : false,
-                          "id" : "pbCheckbox",
                           "description" : ""
                         }
                       ]
@@ -872,21 +663,14 @@
     ]
   ],
   "variables" : {
-    "fORSUPedidodeservico" : {
+    "eCF" : {
       "type" : "businessdata",
       "value" : [
-        "{\"displayValue\":\"find [com.company.model.FORSUPedidodeservico]\",\"businessObjectName\":\"FORSUPedidodeservico\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.company.model.FORSUPedidodeservico\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+        "{\"displayValue\":\"find [com.company.model.ECF]\",\"businessObjectName\":\"ECF\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.company.model.ECF\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
       ],
       "exposed" : false
     },
-    "fORSUPedidodeservico_selected" : {
-      "type" : "constant",
-      "value" : [
-        ""
-      ],
-      "exposed" : false
-    },
-    "fORSUPedidodeservico_1_selected" : {
+    "eCF_selected" : {
       "type" : "constant",
       "value" : [
         ""
@@ -896,23 +680,16 @@
   },
   "assets" : [
     {
-      "id" : "5c8f859c-aba7-4762-b89b-54a818a8a3cc",
-      "name" : "bootstrap.css",
-      "type" : "css",
-      "order" : 1,
-      "external" : false
-    },
-    {
-      "id" : "ad18f3f1-0d86-48fa-8874-0fc09f23db5b",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "c68d3108-f4fd-44b2-b460-d9ceaa1ffc28",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "1a51ca92-5e33-4b3a-bdfc-af32cb9a4fd3",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "3039e367-a05f-4437-8d07-fbece3c185fa",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }
