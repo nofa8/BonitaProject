@@ -89,7 +89,32 @@
                 <field type="BOOLEAN" length="255" name="necessitaDePreparacao" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
-            <queries/>
+            <queries>
+                <query name="istoEAwesome" content="SELECT e&#13;&#10;FROM Produto p&#13;&#10;JOIN p.etiqueta e&#13;&#10;WHERE p.id = :id&#13;&#10;  AND e.letra = 'P'&#13;&#10;  AND e.estaValidadaPorTecnico != True&#13;&#10;ORDER BY e.persistenceId ASC&#13;&#10;" returnType="java.util.List">
+                    <queryParameters>
+                        <queryParameter name="id" className="java.lang.Integer"/>
+                        <queryParameter name="descricao" className="java.lang.String"/>
+                        <queryParameter name="tipo" className="java.lang.String"/>
+                        <queryParameter name="finalidade" className="java.lang.String"/>
+                        <queryParameter name="cliente" className="java.lang.String"/>
+                        <queryParameter name="localEntrega" className="java.lang.String"/>
+                        <queryParameter name="estaProntoParaEntrega" className="java.lang.Boolean"/>
+                        <queryParameter name="necessitaDePreparacao" className="java.lang.Boolean"/>
+                    </queryParameters>
+                </query>
+                <query name="countForIstoEAwesome" content="SELECT Count(e)&#13;&#10;FROM Produto p&#13;&#10;JOIN p.etiqueta e&#13;&#10;WHERE p.id = :id&#13;&#10;  AND e.letra = 'P'&#13;&#10;  AND e.estaValidadaPorTecnico != True&#13;&#10;ORDER BY e.persistenceId ASC&#13;&#10;" returnType="com.company.model.Produto">
+                    <queryParameters>
+                        <queryParameter name="id" className="java.lang.Integer"/>
+                        <queryParameter name="descricao" className="java.lang.String"/>
+                        <queryParameter name="tipo" className="java.lang.String"/>
+                        <queryParameter name="finalidade" className="java.lang.String"/>
+                        <queryParameter name="cliente" className="java.lang.String"/>
+                        <queryParameter name="localEntrega" className="java.lang.String"/>
+                        <queryParameter name="estaProntoParaEntrega" className="java.lang.Boolean"/>
+                        <queryParameter name="necessitaDePreparacao" className="java.lang.Boolean"/>
+                    </queryParameters>
+                </query>
+            </queries>
             <indexes/>
         </businessObject>
     </businessObjects>

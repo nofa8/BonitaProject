@@ -315,16 +315,16 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_fX7j8UbdEfC_8-89pZz5rA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_fX7j8EbdEfC_8-89pZz5rA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_fX7j8kbdEfC_8-89pZz5rA" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_EOTydk7MEfC22okNeWQG-w">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_EOTyd07MEfC22okNeWQG-w" name="encomenda" content="encomenda" type="TYPE_VARIABLE" returnType="com.company.model.Encomenda">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_EOTyeE7MEfC22okNeWQG-w" name="encomenda" dataType="_fU9viEbdEfC_8-89pZz5rA" className="com.company.model.Encomenda"/>
+          <operations xmi:type="expression:Operation" xmi:id="_Ov2EOU7cEfCn-d4AVVl1IQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ov2EOk7cEfCn-d4AVVl1IQ" name="encomenda" content="encomenda" type="TYPE_VARIABLE" returnType="com.company.model.Encomenda">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ov2EO07cEfCn-d4AVVl1IQ" name="encomenda" dataType="_fU9viEbdEfC_8-89pZz5rA" className="com.company.model.Encomenda"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_EOTyeU7MEfC22okNeWQG-w" name="encomendaInput.produto" content="//Retrieve aggregated Produto using its DAO and persistenceId&#xD;&#xA;def produtoVar = produtoDAO.findByPersistenceId(encomendaInput?.produto?.persistenceId_string?.trim() ? encomendaInput.produto.persistenceId_string.toLong() : null)&#xD;&#xA;if (!produtoVar) {&#xD;&#xA;&#x9;if (encomendaInput?.produto?.persistenceId_string?.trim() ? encomendaInput.produto.persistenceId_string.toLong() : null) {&#xD;&#xA;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `Produto` with the persistence id &quot; + encomendaInput?.produto?.persistenceId_string?.trim() ? encomendaInput.produto.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return null&#xD;&#xA;}&#xD;&#xA;produtoVar.id = encomendaInput?.produto?.id&#xD;&#xA;produtoVar.etiqueta = {&#xD;&#xA;&#x9;def etiquetaList = []&#xD;&#xA;&#x9;//For each item collected in multiple input&#xD;&#xA;&#x9;encomendaInput?.produto?.etiqueta.each{&#xD;&#xA;&#x9;&#x9;//Add Etiqueta instance&#xD;&#xA;&#x9;&#x9;etiquetaList.add({ currentEtiquetaInput ->&#xD;&#xA;&#x9;&#x9;&#x9;def etiquetaVar = etiquetaDAO.findByPersistenceId(currentEtiquetaInput.persistenceId_string?.trim() ? currentEtiquetaInput.persistenceId_string.toLong() : null)&#xD;&#xA;&#x9;&#x9;&#x9;if(!etiquetaVar) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `Etiqueta` with the persistence id &quot; + currentEtiquetaInput.persistenceId_string?.trim() ? currentEtiquetaInput.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;etiquetaVar.artigo = currentEtiquetaInput.artigo&#xD;&#xA;&#x9;&#x9;&#x9;etiquetaVar.descricao = currentEtiquetaInput.descricao&#xD;&#xA;&#x9;&#x9;&#x9;etiquetaVar.letra = currentEtiquetaInput.letra&#xD;&#xA;&#x9;&#x9;&#x9;etiquetaVar.cor = currentEtiquetaInput.cor&#xD;&#xA;&#x9;&#x9;&#x9;etiquetaVar.tipo = currentEtiquetaInput.tipo&#xD;&#xA;&#x9;&#x9;&#x9;etiquetaVar.cliente = currentEtiquetaInput.cliente&#xD;&#xA;&#x9;&#x9;&#x9;etiquetaVar.localEntrega = currentEtiquetaInput.localEntrega&#xD;&#xA;&#x9;&#x9;&#x9;etiquetaVar.estaValidadaPorTecnico = currentEtiquetaInput.estaValidadaPorTecnico&#xD;&#xA;&#x9;&#x9;&#x9;return etiquetaVar&#xD;&#xA;&#x9;&#x9;}(it))&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return etiquetaList}()&#xD;&#xA;return produtoVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Produto">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_1BlCIE7OEfC22okNeWQG-w" name="encomendaInput" type="COMPLEX" createMode="false"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_1BlCIU7OEfC22okNeWQG-w" name="produtoDAO" content="produtoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.ProdutoDAO" returnTypeFixed="true"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_1BlCIk7OEfC22okNeWQG-w" name="etiquetaDAO" content="etiquetaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.EtiquetaDAO" returnTypeFixed="true"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ov2EPE7cEfCn-d4AVVl1IQ" name="encomendaInput.produto" content="//Retrieve aggregated Produto using its DAO and persistenceId&#xD;&#xA;def produtoVar = produtoDAO.findByPersistenceId(encomendaInput?.produto?.persistenceId_string?.trim() ? encomendaInput.produto.persistenceId_string.toLong() : null)&#xD;&#xA;if (!produtoVar) {&#xD;&#xA;&#x9;if (encomendaInput?.produto?.persistenceId_string?.trim() ? encomendaInput.produto.persistenceId_string.toLong() : null) {&#xD;&#xA;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `Produto` with the persistence id &quot; + encomendaInput?.produto?.persistenceId_string?.trim() ? encomendaInput.produto.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return null&#xD;&#xA;}&#xD;&#xA;produtoVar.etiqueta = {&#xD;&#xA;&#x9;def etiquetaList = []&#xD;&#xA;&#x9;//For each item collected in multiple input&#xD;&#xA;&#x9;encomendaInput?.produto?.etiqueta.each{&#xD;&#xA;&#x9;&#x9;//Add Etiqueta instance&#xD;&#xA;&#x9;&#x9;etiquetaList.add({ currentEtiquetaInput ->&#xD;&#xA;&#x9;&#x9;&#x9;def etiquetaVar = etiquetaDAO.findByPersistenceId(currentEtiquetaInput.persistenceId_string?.trim() ? currentEtiquetaInput.persistenceId_string.toLong() : null)&#xD;&#xA;&#x9;&#x9;&#x9;if(!etiquetaVar) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `Etiqueta` with the persistence id &quot; + currentEtiquetaInput.persistenceId_string?.trim() ? currentEtiquetaInput.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;etiquetaVar.estaValidadaPorTecnico = currentEtiquetaInput.estaValidadaPorTecnico&#xD;&#xA;&#x9;&#x9;&#x9;return etiquetaVar&#xD;&#xA;&#x9;&#x9;}(it))&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return etiquetaList}()&#xD;&#xA;return produtoVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Produto">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ov2EPU7cEfCn-d4AVVl1IQ" name="encomendaInput" type="COMPLEX" createMode="false"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_Ov2EPk7cEfCn-d4AVVl1IQ" name="produtoDAO" content="produtoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.ProdutoDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_Ov2EP07cEfCn-d4AVVl1IQ" name="etiquetaDAO" content="etiquetaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.EtiquetaDAO" returnTypeFixed="true"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_EOTyfU7MEfC22okNeWQG-w" type="JAVA_METHOD" expression="setProduto">
+            <operator xmi:type="expression:Operator" xmi:id="_Ov2EQE7cEfCn-d4AVVl1IQ" type="JAVA_METHOD" expression="setProduto">
               <inputTypes>com.company.model.Produto</inputTypes>
             </operator>
           </operations>
@@ -337,48 +337,25 @@
             <condition xmi:type="expression:Expression" xmi:id="_J4FvgEbjEfC_8-89pZz5rA" name="2 Days 00:00:00" content="172800000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_fX7j-UbdEfC_8-89pZz5rA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_Fe0_EE7MEfC22okNeWQG-w" name="validarEtiquetaPForm" content="38b6e411-32dd-4e93-af50-862998c508d4" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_ZkbBEE7cEfCn-d4AVVl1IQ" name="boaPorreiro" content="0bcc801f-4094-485f-b8f7-48158afa086a" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_fX7j-EbdEfC_8-89pZz5rA">
-            <inputs xmi:type="process:ContractInput" xmi:id="_EOTyYE7MEfC22okNeWQG-w" name="encomendaInput" type="COMPLEX" dataReference="encomenda" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_EOTyYU7MEfC22okNeWQG-w" name="produto" type="COMPLEX" createMode="false">
-                <inputs xmi:type="process:ContractInput" xmi:id="_EOTyYk7MEfC22okNeWQG-w" name="persistenceId_string" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_EOTyY07MEfC22okNeWQG-w" name="id" type="INTEGER" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_EOTyZE7MEfC22okNeWQG-w" name="etiqueta" type="COMPLEX" multiple="true" createMode="false">
-                  <inputs xmi:type="process:ContractInput" xmi:id="_EOTyZU7MEfC22okNeWQG-w" name="persistenceId_string" createMode="false"/>
-                  <inputs xmi:type="process:ContractInput" xmi:id="_EOTyZk7MEfC22okNeWQG-w" name="artigo" createMode="false"/>
-                  <inputs xmi:type="process:ContractInput" xmi:id="_EOTyZ07MEfC22okNeWQG-w" name="descricao" createMode="false"/>
-                  <inputs xmi:type="process:ContractInput" xmi:id="_EOTyaE7MEfC22okNeWQG-w" name="letra" createMode="false"/>
-                  <inputs xmi:type="process:ContractInput" xmi:id="_EOTyaU7MEfC22okNeWQG-w" name="cor" createMode="false"/>
-                  <inputs xmi:type="process:ContractInput" xmi:id="_EOTyak7MEfC22okNeWQG-w" name="tipo" createMode="false"/>
-                  <inputs xmi:type="process:ContractInput" xmi:id="_EOTya07MEfC22okNeWQG-w" name="cliente" createMode="false"/>
-                  <inputs xmi:type="process:ContractInput" xmi:id="_EOTybE7MEfC22okNeWQG-w" name="localEntrega" createMode="false"/>
-                  <inputs xmi:type="process:ContractInput" xmi:id="_EOTybU7MEfC22okNeWQG-w" name="estaValidadaPorTecnico" type="BOOLEAN" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_Ov2EME7cEfCn-d4AVVl1IQ" name="encomendaInput" type="COMPLEX" dataReference="encomenda" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ov2EMU7cEfCn-d4AVVl1IQ" name="produto" type="COMPLEX" createMode="false">
+                <inputs xmi:type="process:ContractInput" xmi:id="_Ov2EMk7cEfCn-d4AVVl1IQ" name="persistenceId_string" createMode="false"/>
+                <inputs xmi:type="process:ContractInput" xmi:id="_Ov2EM07cEfCn-d4AVVl1IQ" name="etiqueta" type="COMPLEX" multiple="true" createMode="false">
+                  <inputs xmi:type="process:ContractInput" xmi:id="_Ov2ENE7cEfCn-d4AVVl1IQ" name="persistenceId_string" createMode="false"/>
+                  <inputs xmi:type="process:ContractInput" xmi:id="_Ov2ENU7cEfCn-d4AVVl1IQ" name="estaValidadaPorTecnico" type="BOOLEAN" createMode="false"/>
                 </inputs>
               </inputs>
             </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_EOTybk7MEfC22okNeWQG-w" expression="encomendaInput?.produto != null" errorMessage="Produto is mandatory for Encomenda" name="mandatory_encomendaInput_produto">
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_Ov2ENk7cEfCn-d4AVVl1IQ" expression="encomendaInput?.produto != null" errorMessage="Produto is mandatory for Encomenda" name="mandatory_encomendaInput_produto">
               <inputNames>encomendaInput</inputNames>
             </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_EOTyb07MEfC22okNeWQG-w" expression="!encomendaInput?.produto || encomendaInput?.produto?.persistenceId_string" errorMessage="Produto must reference an existing instance with a persistenceId for Encomenda" name="aggregation_encomendaInput_produto">
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_Ov2EN07cEfCn-d4AVVl1IQ" expression="!encomendaInput?.produto || encomendaInput?.produto?.persistenceId_string" errorMessage="Produto must reference an existing instance with a persistenceId for Encomenda" name="aggregation_encomendaInput_produto">
               <inputNames>encomendaInput</inputNames>
             </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_EOTycE7MEfC22okNeWQG-w" expression="encomendaInput?.produto?.id != null" errorMessage="id is mandatory for Produto" name="mandatory_encomendaInput_produto_id">
-              <inputNames>encomendaInput</inputNames>
-            </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_EOTycU7MEfC22okNeWQG-w" expression="!encomendaInput?.produto?.etiqueta || encomendaInput?.produto?.etiqueta?.persistenceId_string" errorMessage="Etiqueta must reference an existing instance with a persistenceId for Produto" name="aggregation_encomendaInput_produto_etiqueta">
-              <inputNames>encomendaInput</inputNames>
-            </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_EOTyck7MEfC22okNeWQG-w" expression="encomendaInput?.produto?.etiqueta?.artigo.flatten().every{it!=null}" errorMessage="artigo is mandatory for Etiqueta" name="mandatory_encomendaInput_produto_etiqueta_artigo">
-              <inputNames>encomendaInput</inputNames>
-            </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_EOTyc07MEfC22okNeWQG-w" expression="encomendaInput?.produto?.etiqueta?.descricao.flatten().every{it!=null}" errorMessage="descricao is mandatory for Etiqueta" name="mandatory_encomendaInput_produto_etiqueta_descricao">
-              <inputNames>encomendaInput</inputNames>
-            </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_EOTydE7MEfC22okNeWQG-w" expression="encomendaInput?.produto?.etiqueta?.letra.flatten().every{it!=null}" errorMessage="letra is mandatory for Etiqueta" name="mandatory_encomendaInput_produto_etiqueta_letra">
-              <inputNames>encomendaInput</inputNames>
-            </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_EOTydU7MEfC22okNeWQG-w" expression="encomendaInput?.produto?.etiqueta?.cor.flatten().every{it!=null}" errorMessage="cor is mandatory for Etiqueta" name="mandatory_encomendaInput_produto_etiqueta_cor">
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_Ov2EOE7cEfCn-d4AVVl1IQ" expression="!encomendaInput?.produto?.etiqueta || encomendaInput?.produto?.etiqueta?.persistenceId_string" errorMessage="Etiqueta must reference an existing instance with a persistenceId for Produto" name="aggregation_encomendaInput_produto_etiqueta">
               <inputNames>encomendaInput</inputNames>
             </constraints>
           </contract>
