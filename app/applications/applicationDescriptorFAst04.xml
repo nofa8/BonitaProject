@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.1">
+    <application homePage="fast04" layout="custompage_layoutBonita" theme="custompage_themeBonita" token="fast04" version="1.0" profile="User" state="ACTIVATED">
+        <displayName>F-Ast-04</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_fastList" token="fast04"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="fast04">
+                <displayName>My F-Ast-04</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>
