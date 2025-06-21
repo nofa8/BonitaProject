@@ -1783,9 +1783,6 @@
         <condition xmi:type="expression:Expression" xmi:id="_8hwMck51EfCE-o_xTz_GMQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_dM7D0EX_EfCeN5dsh0T9GA" name="Assistência Técnica" initiator="true"/>
-      <actors xmi:type="process:Actor" xmi:id="_fNWDcEX_EfCeN5dsh0T9GA" name="Logística"/>
-      <actors xmi:type="process:Actor" xmi:id="_h8piUEX_EfCeN5dsh0T9GA" name="Técnico"/>
-      <actors xmi:type="process:Actor" xmi:id="_iktA0EX_EfCeN5dsh0T9GA" name="Gestor"/>
       <contract xmi:type="process:Contract" xmi:id="_Q-9TBEXPEfCMIvdXAFdhzA"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_Q-9S8UXPEfCMIvdXAFdhzA">
         <name xmi:type="expression:Expression" xmi:id="_Q-9S8kXPEfCMIvdXAFdhzA" content="" returnTypeFixed="true"/>

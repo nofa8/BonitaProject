@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "cdc8522b-a66c-4b12-8d08-5f155aefd394",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1750456433169,
+  "lastUpdate" : 1750512081617,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -42,7 +42,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
+                  "value" : "Procedimento P-GQ-19"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -60,54 +60,6 @@
               "reference" : "6f744013-7ebc-4f8e-a219-fdd7400e0010",
               "hasValidationError" : false,
               "id" : "pbTitle",
-              "description" : ""
-            }
-          ],
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "md" : 12,
-                "sm" : 12,
-                "xs" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "allowHtml" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "labelHidden" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "label" : {
-                  "type" : "interpolation"
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "{{ task.displayDescription }}"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "left"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                }
-              },
-              "reference" : "d721b2bd-2b8c-4ff3-8fa3-2a65aad80cd3",
-              "hasValidationError" : false,
-              "id" : "pbText",
               "description" : ""
             }
           ]
@@ -166,7 +118,7 @@
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "left"
+                    "value" : "center"
                   }
                 },
                 "reference" : "3abd652a-f944-4723-91c0-d36d9a5b6fad",
@@ -176,7 +128,7 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 6,
+                  "md" : 12,
                   "sm" : 12,
                   "xs" : 12,
                   "lg" : 6

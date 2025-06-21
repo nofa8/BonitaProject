@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "e8c0fcb9-63d2-4528-b0be-45c8dd1cd9bf",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1750460193315,
+  "lastUpdate" : 1750511847382,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -151,7 +151,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Colocar Etiqueta"
+                    "value" : "Colocar"
                   },
                   "dataToSend" : {
                     "type" : "expression",
