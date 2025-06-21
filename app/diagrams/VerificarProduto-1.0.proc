@@ -31,8 +31,8 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_rCrcEUXmEfC5F-1YpnHT7Q" name="quantidadeProdutos" content="quantidadeProdutos" type="TYPE_VARIABLE" returnType="java.lang.Integer">
               <referencedElements xmi:type="process:Data" xmi:id="_hAzSAEXnEfC5F-1YpnHT7Q" name="quantidadeProdutos" dataType="_Sfo-k0OKEfCC6dH77cfgtA"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_rCrcEkXmEfC5F-1YpnHT7Q" name="newScript()" content="import java.util.Random&#xD;&#xA;&#xD;&#xA;def random = new Random()&#xD;&#xA;&#xD;&#xA;def quantidadeOriginal = ecfList.quantidadeProd&#xD;&#xA;def chance = random.nextInt(100) // valor entre 0 e 99&#xD;&#xA;&#xD;&#xA;def quantidadeFinal&#xD;&#xA;&#xD;&#xA;if (chance &lt; 25) {&#xD;&#xA;&#x9;// 25% chance de ser menor&#xD;&#xA;&#x9;quantidadeFinal = Math.max(1, quantidadeOriginal - random.nextInt(quantidadeOriginal)) // nunca menor que 1&#xD;&#xA;} else if (chance &lt; 50) {&#xD;&#xA;&#x9;// 25% chance de ser maior&#xD;&#xA;&#x9;def aumento = random.nextInt(quantidadeOriginal) + 1 // pelo menos +1&#xD;&#xA;&#x9;quantidadeFinal = quantidadeOriginal + aumento&#xD;&#xA;} else {&#xD;&#xA;&#x9;// 50% chance de ser igual&#xD;&#xA;&#x9;quantidadeFinal = quantidadeOriginal&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;return quantidadeFinal&#xD;&#xA;&#xD;&#xA;return (int)(Math.random() * ecfList.quantidadeProd) + 1&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XGmzQE66EfC22okNeWQG-w" name="ecfList" dataType="_Sfo-mUOKEfCC6dH77cfgtA" className="com.company.model.ECF"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_rCrcEkXmEfC5F-1YpnHT7Q" name="newScript()" content="import java.util.Random&#xD;&#xA;&#xD;&#xA;def random = new Random()&#xD;&#xA;&#xD;&#xA;def quantidadeOriginal = ecfList.quantidadeProd&#xD;&#xA;def chance = random.nextInt(100) // valor entre 0 e 99&#xD;&#xA;&#xD;&#xA;def quantidadeFinal&#xD;&#xA;&#xD;&#xA;if (chance &lt; 25) {&#xD;&#xA;&#x9;// 25% chance de ser menor&#xD;&#xA;&#x9;quantidadeFinal = Math.max(1, quantidadeOriginal - random.nextInt(quantidadeOriginal)) // nunca menor que 1&#xD;&#xA;} else if (chance &lt; 50) {&#xD;&#xA;&#x9;// 25% chance de ser maior&#xD;&#xA;&#x9;def aumento = random.nextInt(quantidadeOriginal) + 1 // pelo menos +1&#xD;&#xA;&#x9;quantidadeFinal = quantidadeOriginal + aumento&#xD;&#xA;} else {&#xD;&#xA;&#x9;// 50% chance de ser igual&#xD;&#xA;&#x9;quantidadeFinal = quantidadeOriginal&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// para ir para o devolver prdutos&#xD;&#xA;return quantidadeOriginal + 3&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_pd7zQE7jEfCn-d4AVVl1IQ" name="ecfList" dataType="_Sfo-mUOKEfCC6dH77cfgtA" className="com.company.model.ECF"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_rCrcE0XmEfC5F-1YpnHT7Q" type="ASSIGNMENT"/>
           </operations>
@@ -248,7 +248,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_ATkU3UatEfCn3rC-m54myA" name="" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_SjHwcEOKEfCC6dH77cfgtA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_K3kDgE66EfC22okNeWQG-w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_mz0oUE7hEfCn-d4AVVl1IQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_SjHwckOKEfCC6dH77cfgtA">
         <targetForm xmi:type="expression:Expression" xmi:id="_SjHwc0OKEfCC6dH77cfgtA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
